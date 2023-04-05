@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 1vw;
+    background-color: #fffcee;
+}
+
+header{
+    display: flex;
+    gap: 5px;
+    font-family: 'Lexend Deca', sans-serif;
+    justify-content: center;
+    margin: 20px;
+}
+.gallery{
+    color: #FED301;
+}
+main{
+    gap: 10px;
+}
+main .top{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+main .bottom{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+.gato-principal{
+    width: 26vw;
+    
+}
+.sideIMG{
+    grid-area: side;
+    height:200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.sideIMG img{
+    width: 22vw;
+    height: 12.6vw;
+}
+.bottom img{
+    height: 10.3vw;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    font-size: 1vw;
+    color: white;
+    background-color: #FED301;
+    padding: 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw;
+    width: 8vw;
+    height: 3vw;
+}
+
+.button:hover{
+    transition: 0.2s;
+    outline: dotted pink 3px;
+}
+
+.main-img p{
+    padding: 5px;
+    height:30px;
+    width: 400px;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: rgba(0, 0, 0, 0.397);
+    color: white;
+    position: absolute;
+    top: 450px;
+    display: none;
+}
+
+img:hover{
+    cursor: zoom-in;
+}
+
+.gato-principal:hover{
+    transition: 0.5s;
+    box-shadow: 0.5px 0.5px 20px rgba(0, 0, 0, 0.397);
+}
+
+.gato-principal:hover + p{
+    display: block;
+    transition: 0.5s;
+}
+
+.sideIMG img:hover{
+    box-shadow: 16px -16px  #FED301 ;
+    transform: scale(1.2);
+    transition: 0.5s;
+    transition-delay: 0.1s;
+}
+
+.bottom img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    transition-delay: 0.1s;
+    border: #FED301 2px solid;
+}
+
+.linha{
+    height: 3px;
+    width: 30px;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    top: 60px;
+}
